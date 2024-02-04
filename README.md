@@ -91,7 +91,7 @@ Go dilinde temel veri tipleri şunlardır:
 
 Değerlerin türleri, Go dilinde statik olarak belirlenir. Bir değişkene bir değer atadığımızda, bu değişkenin türü belirlenir ve daha sonra bu türü değiştiremeyiz.
 
-```golang
+```go
 var age int
 age = 32
 
@@ -118,14 +118,14 @@ Değişkenler (variables), Go programlama dilinde veri saklamak için kullanıla
 
 Değişkenlerin tanımlanması, var anahtar kelimesi ile yapılır. Tanımlanacak değişkenin adı ve veri tipi belirtilir. İlk değer verilmediğinde, Go dilinde değişkenlerin varsayılan bir değeri vardır.
 
-```golang
+```go
 var name string
 name = "John Doe"
 ```
 
 Bu örnekte, name adında bir değişken tanımlanır ve bu değişkenin tipi string olarak belirlenir. Daha sonra, name değişkenine "John Doe" stringi atanır. Değişkenlerin değeri değiştirilebilir ve farklı veri tiplerinde olabilirler.
 
-```golang
+```go
 var age int
 age = 32
 
@@ -148,7 +148,7 @@ Sabitler (constants), Go programlama dilinde, programın herhangi bir yerinde de
 
 Sabitler, const anahtar kelimesi ile tanımlanır ve veri tipleri belirtilir. Sabitlere ilk değer verilmesi zorunludur ve daha sonra değiştirilemezler.
 
-```golang
+```go
 const pi = 3.14159
 const welcomeMessage = "Welcome to Go programming"
 ```
@@ -167,7 +167,7 @@ Sabitler, programın herhangi bir yerinde kullanılabildiğinden, farklı dosyal
 
 for döngüsü, Go programlama dilinde, belirli bir koşul doğru olduğu sürece tekrarlanan kod bloklarını ifade etmek için kullanılır. for döngüsü, bir başlangıç durumu, bir koşul ve bir adım sayısı içerir.
 
-```golang
+```go
 for i := 0; i < 5; i++ {
     fmt.Println(i)
 }
@@ -177,7 +177,7 @@ Bu örnekte, for döngüsü, i değişkeninin 0 değerinden başlayarak, i deği
 
 for döngüsü, koşul kısmı sağlanana kadar tekrarlanır. Koşul kısmı doğru olmadığında, döngü sona erer. Ayrıca, for döngüsü break veya continue ifadeleri ile de kontrol edilebilir.
 
-```golang
+```go
 for i := 0; i < 10; i++ {
     if i == 3 {
         break
@@ -203,7 +203,7 @@ Döngü içindeki diğer if koşulu ise, eğer i değeri çift sayı ise bir son
 
 if ve else ifadeleri, Go programlama dilinde, belirli koşulların doğru veya yanlış olması durumunda farklı kod bloklarının çalışmasını sağlar.
 
-```golang
+```go
 if x > 0 {
     fmt.Println("Positive number")
 } else if x < 0 {
@@ -215,7 +215,7 @@ if x > 0 {
 
 Bu örnekte, if ifadesi, x değişkeninin 0 dan büyük olması durumunda "Positive number" metnini yazdıracaktır. Eğer x değişkeni 0 dan büyük değilse, else if ifadesi kontrol edilecek ve x değişkeninin 0 dan küçük olması durumunda "Negative number" metnini yazdıracaktır. Eğer x değişkeni 0 dan büyük veya küçük değilse, else bloğu çalışacak ve "Zero" metnini yazdıracaktır.
 
-```golang
+```go
 if ve else ifadeleri, karmaşık koşulları kontrol etmek için de kullanılabilir.
 if x > 10 && x < 20 {
     fmt.Println("x is between 10 and 20")
@@ -236,7 +236,7 @@ Bu örnekte, if ifadesi, x değişkeninin 10 ve 20 arasında olması durumunda "
 
 switch ifadesi, Go programlama dilinde, belirli koşullara göre farklı işlemler yapmak için kullanılır:
 
-```golang
+```go
 day := "sunday"
 ​
 switch day {
@@ -263,7 +263,7 @@ Bu örnekte, switch ifadesi, day değişkeninin değerine göre farklı işlemle
 
 default ifadesi, tüm koşulların doğru olmadığı durumlarda çalışacak olan bir kod bloğunu ifade eder.
 
-```golang
+```go
 switch x {
 case 1:
     fmt.Println("x is 1")
@@ -286,7 +286,7 @@ Bu örnekte, switch ifadesi, x değişkeninin değerine göre farklı işlemler 
 
 Dizi (array), Go programlama dilinde, aynı tipte birden fazla değişkeni tek bir değişkende tutmamızı sağlayan bir veri yapısıdır. Bir dizi, önceden belirlenmiş bir boyuta ve belirli bir veri tipine sahiptir.
 
-```golang
+```go
 var a [5]int
 a[0] = 1
 a[1] = 2
@@ -300,7 +300,7 @@ Bu örnekte, a adlı bir dizi tanımlanır ve boyutu 5 olarak belirtilir. Dizini
 
 Dizilerin boyutu, bir kere tanımlandıktan sonra değiştirilemez. Ancak, Go dilindeki dil özellikleri ile dizi boyutları değiştirilebilir. Bu özellik, Go dilinde slice adı verilen bir veri yapısı ile gerçekleştirilir.
 
-```golang
+```go
 a := [5]int{1, 2, 3, 4, 5}
 fmt.Println(a)
 ```
@@ -315,14 +315,14 @@ Bu örnekte, a adlı bir dizi tanımlanır ve elemanları {1, 2, 3, 4, 5} olarak
 
 Dilin temel veri yapılarından biri olan dilimler (slices), Go programlama dilinde, boyutu değiştirilebilen, esnek bir dizi veri yapısıdır. Dilimler, dizilerin bir alt kümesi olarak düşünülebilir ve Go dilinde sıkça kullanılır.
 
-```golang
+```go
 a := []int{1, 2, 3, 4, 5}
 fmt.Println(a)
 ```
 
 Bu örnekte, a adlı bir dilim tanımlanır ve elemanları {1, 2, 3, 4, 5} olarak atanır. Dizilerden farklı olarak, dilimlerin boyutu tanımlama aşamasında belirtilmez. Dilimler, boş da tanımlanabilir.
 
-```golang
+```go
 var a []int
 a = append(a, 1)
 a = append(a, 2, 3, 4, 5)
@@ -333,7 +333,7 @@ Bu örnekte, a adlı bir dilim tanımlanır ve append() fonksiyonu ile elemanlar
 
 Dilimler, dizilerden farklı olarak, bir alt küme olarak da tanımlanabilir.
 
-```golang
+```go
 a := []int{1, 2, 3, 4, 5}
 b := a[1:4]
 fmt.Println(b)
@@ -349,7 +349,7 @@ Bu örnekte, a adlı bir dilim tanımlanır ve elemanlarına {1, 2, 3, 4, 5} de�
 
 Map, Go programlama dilinde, bir anahtar-değer çiftleri koleksiyonudur. Map veri yapısı, diğer programlama dillerindeki dictionary, hash table veya associative array gibi veri yapılarına benzer. Bir Map veri yapısı, belirli bir anahtar için bir değer saklar.
 
-```golang
+```go
 var colors map[string]string
 colors = make(map[string]string)
 colors["red"] = "#FF0000"
@@ -362,7 +362,7 @@ Bu örnekte, colors adlı bir Map tanımlanır ve make() fonksiyonu ile oluştur
 
 Map veri yapısı, diğer programlama dillerindeki veri yapılarından farklı olarak, anahtarlar için belirli bir veri tipi ve değerler için belirli bir veri tipi belirtmek zorunda değildir. Anahtarlar ve değerler farklı veri tiplerinde olabilir.
 
-```golang
+```go
 ages := map[string]int{
     "Alice": 25,
     "Bob":   30,
@@ -381,7 +381,7 @@ Bu örnekte, ages adlı bir Map tanımlanır ve string türünde anahtarlar ve i
 
 range ifadesi, Go programlama dilinde, belirli bir dizi, dilim veya harita üzerinde döngü oluşturmak için kullanılır. range ifadesi, veri yapısındaki tüm elemanları tek tek ele almak için kullanılır.
 
-```golang
+```go
 numbers := []int{1, 2, 3, 4, 5}
 for i, num := range numbers {
     fmt.Println("index:", i, "number:", num)
@@ -390,7 +390,7 @@ for i, num := range numbers {
 
 Bu örnekte, numbers adlı bir dilim tanımlanır ve elemanlarına {1, 2, 3, 4, 5} değerleri atanır. range ifadesi kullanılarak, numbers dilimindeki tüm elemanlar tek tek alınır ve for döngüsü içinde kullanılır. i değişkeni, döngünün sırasıdaki indeks değerini, num değişkeni ise indeksteki elemanı temsil eder. Bu örnekte, indeksler ve elemanlar birlikte yazdırılır.
 
-```golang
+```go
 colors := map[string]string{
     "red":   "#FF0000",
     "green": "#00FF00",
@@ -411,7 +411,7 @@ Bu örnekte, colors adlı bir Map tanımlanır ve red, green ve blue anahtarlar�
 
 Function, Go programlama dilinde, belirli bir işlevi yerine getiren kod bloklarını ifade eder. Bir fonksiyon, bir veya birden fazla parametre alabilir, bir işlem gerçekleştirebilir ve bir veya birden fazla sonuç döndürebilir.
 
-```golang
+```go
 func add(a int, b int) int {
     return a + b
 }
@@ -422,7 +422,7 @@ fmt.Println(result)
 
 Bu örnekte, add adlı bir fonksiyon tanımlanır. Fonksiyon, a ve b adlı iki int tipinde parametre alır ve bu parametreler toplanarak toplam sonucu int tipinde geri döndürür. add fonksiyonu, 5 ve 10 parametreleri ile çağrılır ve sonuç fmt.Println(result) ifadesi ile yazdırılır.
 
-```golang
+```go
 func swap(a, b string) (string, string) {
     return b, a
 }
@@ -441,7 +441,7 @@ Bu örnekte, swap adlı bir fonksiyon tanımlanır. Fonksiyon, a ve b adlı iki 
 
 Variadic Functions, Go programlama dilinde, değişken sayıda argüman alan fonksiyonlardır. Bu fonksiyonlar, bir veya birden fazla argüman alabilir ve değişken sayıda argüman alabilir.
 
-```golang
+```go
 func sum(nums ...int) int {
     total := 0
     for _, num := range nums {
@@ -456,7 +456,7 @@ fmt.Println(sum(2, 4, 6))
 
 Bu örnekte, sum adlı bir fonksiyon tanımlanır. Fonksiyon, nums adlı bir int türünde değişken sayıda parametre alır ve toplamını geri döndürür. Fonksiyon içinde, for döngüsü kullanarak nums dizisindeki tüm elemanların toplamı hesaplanır. Fonksiyon, sum(1, 2, 3, 4, 5) ve sum(2, 4, 6) şeklinde çağrılır ve sonuçlar ekrana yazdırılır.
 
-```golang
+```go
 func concatenate(sep string, strs ...string) string {
     result := ""
     for i, str := range strs {
@@ -482,7 +482,7 @@ Bu örnekte, concatenate adlı bir fonksiyon tanımlanır. Fonksiyon, sep adlı 
 
 Closures, Go programlama dilinde, bir fonksiyonun bir iç fonksiyon tarafından kullanılmasıyla oluşan bir yapıdır. Bu yapı, bir fonksiyonun içindeki başka bir fonksiyona referans vererek, bir fonksiyonun çalıştığı bağlamın dışındaki değişkenlere erişim sağlar.
 
-```golang
+```go
 func outer() func() int {
     count := 0
     return func() int {
@@ -499,7 +499,7 @@ fmt.Println(increment())
 
 Bu örnekte, outer adlı bir fonksiyon tanımlanır. Fonksiyon, bir iç fonksiyon döndürür ve iç fonksiyon, count adlı bir değişkene erişim sağlar. increment adlı bir değişkene outer() fonksiyonu atanır ve bu değişken ile iç fonksiyon çalıştırılır. count değişkeni, increment() çağrıldıkça artar ve her seferinde artışı ekrana yazdırılır.
 
-```golang
+```go
 func adder(a int) func(int) int {
     return func(b int) int {
         return a + b
@@ -521,7 +521,7 @@ Bu örnekte, adder adlı bir fonksiyon tanımlanır. Fonksiyon, a adlı bir int 
 
 Recursion, Go programlama dilinde, bir fonksiyonun kendisini çağırmasıdır. Bu yapı, belirli bir koşul sağlanana kadar tekrarlanarak işlem yapar.
 
-```golang
+```go
 func factorial(n int) int {
     if n == 0 {
         return 1
@@ -534,7 +534,7 @@ fmt.Println(factorial(5))
 
 Bu örnekte, factorial adlı bir fonksiyon tanımlanır. Fonksiyon, n adlı bir int türünde parametre alır ve faktöriyel hesaplar. Fonksiyon içinde, if koşulu kullanarak n değerinin 0 olup olmadığını kontrol eder. Eğer n 0 ise, 1 değeri döndürülür. Eğer n 0 değilse, fonksiyon kendini tekrar çağırarak faktöriyel hesaplar. factorial(5) çağrıldıkça sonuçlar ekrana yazdırılır.
 
-```golang
+```go
 func fibonacci(n int) int {
     if n < 2 {
         return n
@@ -555,7 +555,7 @@ Bu örnekte, fibonacci adlı bir fonksiyon tanımlanır. Fonksiyon, n adlı bir 
 
 Pointers, Go programlama dilinde, bir değişkenin bellek adresini tutan bir veri türüdür. Bellek adresi, değişkenin tutulduğu bellek bölgesinin başlangıç adresidir.
 
-```golang
+```go
 func zeroVal(val int) {
     val = 0
 }
@@ -575,7 +575,7 @@ fmt.Println(y)
 
 Bu örnekte, zeroVal adlı bir fonksiyon tanımlanır. Fonksiyon, bir int türünde parametre alır ve val adlı değişkenin değerini 0 olarak değiştirir. zeroPtr adlı bir fonksiyon tanımlanır. Fonksiyon, bir int türünde bir pointer (\*int) parametre alır ve pointer ile gösterilen değişkenin değerini 0 olarak değiştirir. x adlı bir değişkene 5 değeri atanır ve zeroVal(x) fonksiyonu çağrılır. Fonksiyon çağrıldıktan sonra, x'in değeri 0 olarak değişmez. y adlı bir değişkene 5 değeri atanır ve zeroPtr(\&y) fonksiyonu çağrılır. Fonksiyon çağrıldıktan sonra, y'nin değeri 0 olarak değişir.
 
-```golang
+```go
 func swap(a, b *int) {
     temp := *a
     *a = *b
@@ -598,7 +598,7 @@ Bu örnekte, swap adlı bir fonksiyon tanımlanır. Fonksiyon, iki adet pointer 
 
 Strings, Go programlama dilinde, Unicode karakterlerinin birleştirilerek oluşturduğu bir karakter dizisidir. Her bir karakter, 1-4 byte arasında değişen boyutlarda olabilir.
 
-```golang
+```go
 str := "hello"
 fmt.Println(str)
 fmt.Println(str[0])
@@ -607,7 +607,7 @@ fmt.Println(str[1:3])
 
 Bu örnekte, str adlı bir string değişkeni tanımlanır ve "hello" değeri atanır. str değişkeni ekrana yazdırılır, ardından str\[0] ifadesi kullanılarak, dizinin ilk karakteri olan "h" ekrana yazdırılır. str\[1:3] ifadesi kullanılarak, dizinin ikinci ve üçüncü karakterleri olan "el" ekrana yazdırılır.
 
-```golang
+```go
 for i, r := range "hello" {
     fmt.Printf("%d: %s\n", i, string(r))
 }
@@ -615,7 +615,7 @@ for i, r := range "hello" {
 
 Bu örnekte, for döngüsü kullanarak range fonksiyonu ile "hello" stringinin her bir karakterine erişilir. Her karakterin pozisyonu ve değeri ekrana yazdırılır. Runes, Go programlama dilinde, bir Unicode karakterinin birleşimini ifade eden bir veri türüdür. Runes, 1-4 byte arasında değişen boyutlarda olabilen karakterleri temsil etmek için kullanılır.
 
-```golang
+```go
 str := "こんにちは"
 for i, r := range str {
     fmt.Printf("%d: %c\n", i, r)
@@ -632,7 +632,7 @@ Bu örnekte, str adlı bir string değişkeni tanımlanır ve "こんにちは" 
 
 Structs, Go programlama dilinde, farklı veri türlerini içeren bir veri yapısıdır. Bu yapıda, farklı veri türlerine sahip verileri bir arada tutabilir ve bu veriler üzerinde işlemler yapabilirsiniz.
 
-```golang
+```go
 type Person struct {
     Name string
     Age  int
@@ -647,7 +647,7 @@ fmt.Printf("Name: %s, Age: %d\n", p.Name, p.Age)
 
 Bu örnekte, Person adlı bir struct oluşturulur ve Name adlı bir string türünde ve Age adlı bir int türünde iki adet özellik tanımlanır. var anahtar kelimesi ile p adlı bir Person türünde değişken tanımlanır. p değişkeninin Name ve Age özellikleri, p.Name ve p.Age ifadeleri kullanılarak atama işlemi yapılır ve fmt.Println() fonksiyonu ile p değişkeni ekrana yazdırılır. Ayrıca p.Name ve p.Age ifadeleri kullanılarak, Name ve Age özellikleri ayrı ayrı ekrana yazdırılır.
 
-```golang
+```go
 type Rectangle struct {
     width  float64
     height float64
@@ -671,7 +671,7 @@ Bu örnekte, Rectangle adlı bir struct oluşturulur ve width adlı bir float64 
 
 Methods, Go programlama dilinde, bir veri yapısına özgü işlemleri gerçekleştirmek için kullanılan bir fonksiyon türüdür. Bu işlemler, veri yapısının özellikleri üzerinde çalışarak sonuç üretirler.
 
-```golang
+```go
 type Rectangle struct {
     width  float64
     height float64
@@ -692,7 +692,7 @@ fmt.Println(r.perimeter())
 
 Bu örnekte, Rectangle adlı bir struct oluşturulur ve width adlı bir float64 türünde ve height adlı bir float64 türünde iki adet özellik tanımlanır. area adlı bir fonksiyon, Rectangle türünde bir parametre alır ve dikdörtgenin alanını hesaplar. Fonksiyonun döndürdüğü sonuç, dikdörtgenin alanıdır. perimeter adlı bir fonksiyon, Rectangle türünde bir parametre alır ve dikdörtgenin çevresini hesaplar. Fonksiyonun döndürdüğü sonuç, dikdörtgenin çevresidir. r adlı bir Rectangle değişkeni oluşturulur ve width ve height özelliklerine 3.0 ve 4.0 değerleri atanır. r.area() ve r.perimeter() ifadeleri kullanılarak, dikdörtgenin alanı ve çevresi hesaplanır ve sonuçlar ekrana yazdırılır.
 
-```golang
+```go
 type Person struct {
     Name string
     Age  int
@@ -732,7 +732,7 @@ Go dilinde interface, bir veya birden fazla metodun belirli bir imza setini tan�
 
 Örneğin, bir şeklin alanını hesaplamak için area adlı bir fonksiyon tanımlamış olsunuz. Kare, daire ve dikdörtgen gibi farklı şekiller, area fonksiyonunu farklı şekillerde uygular. Bu durumda, her bir şeklin alanını hesaplamak için ayrı ayrı fonksiyonlar tanımlamak yerine, interface kullanarak hepsini aynı türdeki bir veri tipinde toplayabilirsiniz.
 
-```golang
+```go
 package main
 
 import (
@@ -787,7 +787,7 @@ Bu örnekte, Shape adlı bir interface tanımlanır ve area adlı bir fonksiyon 
 
 Çıktı:
 
-```
+```go
 Circle area: 78.539816
 Rectangle area: 50.000000
 Square area: 25.000000
@@ -801,7 +801,7 @@ Square area: 25.000000
 
 Go dilinde struct embedding, bir struct'ın başka bir struct içinde yerleştirilmesi anlamına gelir. Böylece, iç içe geçmiş yapılar oluşturulabilir ve kod tekrarı azaltılabilir.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -853,7 +853,7 @@ Bu örnekte, Employee adlı bir yapı, Person yapısını içerir. Bu, Employee 
 
 Go dilinde hata yönetimi, error adlı bir veri tipi kullanılarak yapılır. error veri tipi, hata mesajı veya nil değeri döndüren bir fonksiyondan dönen değerleri işlemek için kullanılır.
 
-```golang
+```go
 package main
 
 import (
@@ -891,7 +891,7 @@ main fonksiyonunda, divide fonksiyonu iki farklı parametreyle çağrılır. err
 
 Çıktı:
 
-```
+```go
 5 <nil>
 Cannot divide by zero
 ```
@@ -906,7 +906,7 @@ Bu örnekte, error kullanarak hata yönetimi örneği yapılmıştır. divide fo
 
 Goroutines, Go dilinde eşzamanlı olarak çalışan işlemlerdir. Goroutines, go anahtar kelimesi kullanılarak oluşturulur ve farklı işlemleri eşzamanlı olarak gerçekleştirmek için kullanılır.
 
-```golang
+```go
 package main
 
 import (
@@ -946,7 +946,7 @@ Bu örnekte, goroutine kullanarak, sayHello fonksiyonu eşzamanlı olarak çalı
 
 Go dilinde channel, goroutines arasında veri iletişimi yapmak için kullanılan bir veri yapısıdır. Channel, make anahtar kelimesi kullanılarak oluşturulur ve <- operatörü kullanılarak veri gönderme ve alma işlemleri yapılır.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -969,7 +969,7 @@ main fonksiyonunda, msg adlı bir değişkene messages channel'ından bir mesaj 
 
 Çıktı:
 
-```
+```go
 Hello
 ```
 
@@ -1012,7 +1012,7 @@ Bu örnekler, paralel işlemlerin ne gibi durumlarda kullanılabileceğine dair 
 
 Go dilinde channel'ların boyutu, belirli bir kapasiteyle sınırlandırılabilir. Bu, channel'ların belirli sayıda veri almasını sağlar. Bu özellik, channel buffering olarak adlandırılır.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -1051,7 +1051,7 @@ Bu örnekte, channel buffering kullanarak, messages channel'ı boyutu 2 olarak t
 
 Go dilinde, channel'lar ayrıca, farklı goroutines arasında senkronizasyon için de kullanılabilir. Bu, bir goroutine'un, diğer bir goroutine'un işlemi tamamlamasını beklemesi gerektiği durumlarda kullanışlıdır.
 
-```golang
+```go
 package main
 
 import (
@@ -1097,7 +1097,7 @@ Bu örnekte, channel senkronizasyonu kullanarak, worker fonksiyonu bir goroutine
 
 Go dilinde, channel'ların yönü, gönderme (send) veya alma (receive) işlemleri için belirlenebilir. Bu nedenle, channel'ların kullanımı, farklı goroutines arasındaki iletişimi ve veri aktarımını kolaylaştırır.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -1146,7 +1146,7 @@ Bu örnekte, channel directions kullanarak, ping ve pong fonksiyonları, farklı
 
 Go dilinde, select anahtar kelimesi, birden fazla channel'ı dinleyerek, hangi channel'ın mesaj gönderdiğini belirleyebilir. Bu özellik, channel'ların senkronizasyonunu kolaylaştırır ve farklı goroutines arasındaki mesajlaşmayı yönetir.
 
-```golang
+```go
 package main
 
 import (
@@ -1200,7 +1200,7 @@ Bu örnekte, select anahtar kelimesi kullanarak, c1 ve c2 channel'larını dinle
 
 Go dilinde, timeout işlemleri, özellikle ağ işlemleri sırasında önemlidir. time paketi kullanılarak, belirli bir süre beklenmesi sağlanabilir. Eğer süre aşılırsa, timeout hatası oluşur.
 
-```golang
+```go
 package main
 
 import (
@@ -1262,7 +1262,7 @@ Bu örnekte, time.After kullanarak timeout işlemleri gerçekleştirildi. İlk o
 
 Go dilinde, channel'lar, blocking özelliklerine sahiptir. Yani, bir goroutine, bir channel'a mesaj göndermek ya da mesaj almak istediğinde, ilgili işlem tamamlanana kadar engellenir. Ancak, select anahtar kelimesi kullanılarak, channel'ların non-blocking işlemleri de gerçekleştirilebilir.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -1348,7 +1348,7 @@ Bu örnekte, select anahtar kelimesi kullanarak, non-blocking işlemli yapılabi
 
 Go dilinde, channel'ların kapatılması, mesajların gönderilmesi ve alınması işlemleri arasında senkronizasyon sağlayan bir yöntemdir. close fonksiyonu kullanılarak, bir channel kapatılabilir. Kapatılan bir channel'a mesaj gönderilemez ve bu channel'dan daha fazla mesaj alınamaz.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -1413,7 +1413,7 @@ Bu örnekte, jobs channel'ına mesajlar gönderilir ve goroutine'un bu mesajlar�
 
 Go dilinde, range anahtar kelimesi, channel'lar üzerinde döngü işlemlerinin gerçekleştirilmesini sağlar. Bu yöntemle, channel'ın kapatılması beklenmeden, tüm mesajlar for döngüsü kullanılarak alınabilir.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -1451,7 +1451,7 @@ Bu örnekte, range anahtar kelimesi kullanarak, queue channel'ına gönderilen m
 
 Go dilinde, timerlar, bir işlemin belirli bir süre sonra gerçekleştirilmesini sağlamak için kullanılır. time paketi içerisinde yer alan NewTimer fonksiyonu kullanılarak, bir timer oluşturulabilir.
 
-```golang
+```go
 package main
 
 import (
@@ -1502,7 +1502,7 @@ Bu örnekte, NewTimer fonksiyonu kullanarak, iki adet timer oluşturulur. İlk t
 
 Go dilinde, tickerlar, belirli bir süre boyunca belirli aralıklarla bir işlemin gerçekleştirilmesini sağlamak için kullanılır. time paketi içerisinde yer alan NewTicker fonksiyonu kullanılarak, bir ticker oluşturulabilir.
 
-```golang
+```go
 package main
 
 import (
@@ -1553,7 +1553,7 @@ Ticker stopped
 
 Go dilinde, worker poollar, belirli bir işlemi yapmak üzere ayrılmış bir işçi grubudur. İşler bir channel'a gönderilir ve bu işçiler tarafından işlenir. Bu sayede, işlemler belirli bir sıra ile işçilere dağıtılarak, iş yükü paylaştırılmış olur.
 
-```golang
+```go
 package main
 
 import (
@@ -1628,7 +1628,7 @@ WaitGroup yapısı, programcıların çalışacak işlemlerin sayısını önced
 
 Aşağıdaki örnek, WaitGroup yapısının kullanımını göstermektedir:
 
-```golang
+```go
 package main
 
 import (
@@ -1687,7 +1687,7 @@ Go dilinde, Rate Limiting yapmak için time paketi kullanılabilir. Bu paket, be
 
 Aşağıdaki örnekte, time.Ticker ve time.Sleep kullanarak bir Rate Limiting örneği gösterilmektedir:
 
-```golang
+```go
 package main
 
 import (
@@ -1740,7 +1740,7 @@ Bir Atomic Counter, Go'nun sync/atomic paketinde bulunan bir veri yapısıdır. 
 
 Aşağıdaki örnek, Atomic Counter kullanarak, 10 adet goroutine tarafından ortak kullanılan bir sayaç değişkeninin güvenli bir şekilde artırılmasını gösterir:
 
-```golang
+```go
 package main
 
 import (
@@ -1784,7 +1784,7 @@ Ayrıca, sort.Slice() fonksiyonu ile özel sıralama işlemleri de gerçekleşti
 
 Örneğin, aşağıdaki örnekte sort.Slice() fonksiyonu kullanılarak özel bir sıralama işlemi gerçekleştirilir:
 
-```golang
+```go
 package main
 
 import (
@@ -1828,7 +1828,7 @@ Bu örnekte, Person tipinde bir slice tanımlanır ve sort.Slice() fonksiyonu ku
 
 İlk örnekte, sort.Ints() fonksiyonu kullanılarak ints adlı bir slice küçükten büyüğe doğru sıralanır ve sonuç ekrana yazdırılır:
 
-```golang
+```go
 package main
 
 import (
@@ -1858,7 +1858,7 @@ Slice is sorted.
 
 İkinci örnekte ise sort.Strings() fonksiyonu kullanılarak strings adlı bir slice alfabetik olarak sıralanır ve sonuç ekrana yazdırılır:
 
-```golang
+```go
 package main
 
 import (
@@ -1898,7 +1898,7 @@ panic bir hata olduğu için genellikle kullanılmamalıdır, ancak bir hata dur
 
 panic kullanımı örneği:
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -1941,7 +1941,7 @@ Defer ifadeleri kullanarak, bir işlevin sonunda açılan dosyaları, kapatılma
 
 Örnek olarak, bir dosya açılır ve defer ile fonksiyon sonunda dosya kapatılır:
 
-```golang
+```go
 package main
 
 import (
@@ -1999,7 +1999,7 @@ Bazı yaygın kullanılan string fonksiyonları şunlardır:
 
 Örnek olarak, bir string içinde belirli bir karakter dizisinin kaç kez geçtiğini bulmak için strings.Count fonksiyonu kullanılabilir:
 
-```golang
+```go
 package main
 
 import (
@@ -2028,7 +2028,7 @@ func main() {
 
 Çıktı:
 
-```
+```go
 Contains:   true
 Count:      2
 HasPrefix:  true
@@ -2055,7 +2055,7 @@ Template (şablon) dosyaları, Go'da metin tabanlı verileri biçimlendirmek iç
 
 Go'da, şablon dosyaları text/template ve html/template paketleriyle oluşturulur. Bu paketler, şablon dosyalarının oluşturulmasını ve işlenmesini sağlayan birçok fonksiyon sağlarlar.
 
-```golang
+```go
 package main
 
 import (
@@ -2109,7 +2109,7 @@ JSON verileri, anahtar/değer çiftleri veya dizilerden oluşur. Anahtarlar bir 
 
 Örnek bir JSON verisi şöyle görünebilir:
 
-```json
+```go
 {
     "name": "John Doe",
     "age": 30,
@@ -2123,7 +2123,7 @@ Go dilinde, JSON verileri için struct yapısı kullanılabilir. struct yapısı
 
 Örneğin, bir Person struct'ı tanımlayalım ve bu struct'ı JSON verisiyle eşleştirelim:
 
-```golang
+```go
 type Person struct {
     Name string `json:"name"`
     Age  int    `json:"age"`
@@ -2135,7 +2135,7 @@ Burada, Person struct'ının alanları, JSON verisindeki anahtarlarla eşleştir
 
 Bu struct'ı JSON verisine dönüştürmek için, json.Marshal() fonksiyonu kullanılabilir:
 
-```golang
+```go
 person := Person{Name: "John Doe", Age: 30, City: "New York"}
 jsonData, err := json.Marshal(person)
 if err != nil {
@@ -2148,7 +2148,7 @@ Burada, Person struct'ı bir person değişkeni olarak tanımlanır ve json.Mars
 
 Bir başka örnek de, JSON verilerini Go veri yapılarına dönüştürmek ve tersi işlemi yapmak için json.Marshal() ve json.Unmarshal() fonksiyonlarını kullanmaktır. Örneğin:
 
-```golang
+```go
 package main
 
 import (
@@ -2183,7 +2183,7 @@ func main() {
 
 Bu örnekte, Person adlı bir yapı tanımlanır ve json.Marshal() ve json.Unmarshal() fonksiyonları kullanılarak bu yapı JSON verisi olarak kodlanır ve çözümlenir.
 
-```
+```go
 {"Name":"Alice","Age":30}
 {Bob 40}
 ```
