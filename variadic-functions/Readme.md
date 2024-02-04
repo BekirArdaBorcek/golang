@@ -1,8 +1,8 @@
-## Variadic Functions
+# Variadic Functions
 
 Variadic Functions, Go programlama dilinde, değişken sayıda argüman alan fonksiyonlardır. Bu fonksiyonlar, bir veya birden fazla argüman alabilir ve değişken sayıda argüman alabilir.
 
-```golang
+```go
 func sum(nums ...int) int {
     total := 0
     for _, num := range nums {
@@ -17,7 +17,7 @@ fmt.Println(sum(2, 4, 6))
 
 Bu örnekte, sum adlı bir fonksiyon tanımlanır. Fonksiyon, nums adlı bir int türünde değişken sayıda parametre alır ve toplamını geri döndürür. Fonksiyon içinde, for döngüsü kullanarak nums dizisindeki tüm elemanların toplamı hesaplanır. Fonksiyon, sum(1, 2, 3, 4, 5) ve sum(2, 4, 6) şeklinde çağrılır ve sonuçlar ekrana yazdırılır.
 
-```golang
+```go
 func concatenate(sep string, strs ...string) string {
     result := ""
     for i, str := range strs {

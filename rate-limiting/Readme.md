@@ -6,7 +6,7 @@ Go dilinde, Rate Limiting yapmak için time paketi kullanılabilir. Bu paket, be
 
 Aşağıdaki örnekte, time.Ticker ve time.Sleep kullanarak bir Rate Limiting örneği gösterilmektedir:
 
-```golang
+```go
 package main
 
 import (

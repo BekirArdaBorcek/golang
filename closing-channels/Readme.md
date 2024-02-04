@@ -2,7 +2,7 @@
 
 Go dilinde, channel'ların kapatılması, mesajların gönderilmesi ve alınması işlemleri arasında senkronizasyon sağlayan bir yöntemdir. close fonksiyonu kullanılarak, bir channel kapatılabilir. Kapatılan bir channel'a mesaj gönderilemez ve bu channel'dan daha fazla mesaj alınamaz.
 
-```golang
+```go
 package main
 
 import "fmt"

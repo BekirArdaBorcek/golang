@@ -2,7 +2,7 @@
 
 switch ifadesi, Go programlama dilinde, belirli koşullara göre farklı işlemler yapmak için kullanılır:
 
-```golang
+```go
 day := "sunday"
 ​
 switch day {
@@ -29,7 +29,7 @@ Bu örnekte, switch ifadesi, day değişkeninin değerine göre farklı işlemle
 
 default ifadesi, tüm koşulların doğru olmadığı durumlarda çalışacak olan bir kod bloğunu ifade eder.
 
-```golang
+```go
 switch x {
 case 1:
     fmt.Println("x is 1")

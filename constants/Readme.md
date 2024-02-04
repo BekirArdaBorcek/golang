@@ -4,10 +4,10 @@ Sabitler (constants), Go programlama dilinde, programın herhangi bir yerinde de
 
 Sabitler, const anahtar kelimesi ile tanımlanır ve veri tipleri belirtilir. Sabitlere ilk değer verilmesi zorunludur ve daha sonra değiştirilemezler.
 
-```golang
+```go
 const pi = 3.14159
 const welcomeMessage = "Welcome to Go programming"
-````
+```
 
 Bu örnekte, pi sabiti float64 türünde tanımlanır ve ilk değeri 3.14159 olarak atanır. Daha sonra, welcomeMessage sabiti string türünde tanımlanır ve ilk değeri "Welcome to Go programming" olarak atanır.
 

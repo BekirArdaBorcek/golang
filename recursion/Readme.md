@@ -2,7 +2,7 @@
 
 Recursion, Go programlama dilinde, bir fonksiyonun kendisini çağırmasıdır. Bu yapı, belirli bir koşul sağlanana kadar tekrarlanarak işlem yapar.
 
-```golang
+```go
 func factorial(n int) int {
     if n == 0 {
         return 1
@@ -15,7 +15,7 @@ fmt.Println(factorial(5))
 
 Bu örnekte, factorial adlı bir fonksiyon tanımlanır. Fonksiyon, n adlı bir int türünde parametre alır ve faktöriyel hesaplar. Fonksiyon içinde, if koşulu kullanarak n değerinin 0 olup olmadığını kontrol eder. Eğer n 0 ise, 1 değeri döndürülür. Eğer n 0 değilse, fonksiyon kendini tekrar çağırarak faktöriyel hesaplar. factorial(5) çağrıldıkça sonuçlar ekrana yazdırılır.
 
-```golang
+```go
 func fibonacci(n int) int {
     if n < 2 {
         return n

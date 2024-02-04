@@ -6,7 +6,7 @@ Template (şablon) dosyaları, Go'da metin tabanlı verileri biçimlendirmek iç
 
 Go'da, şablon dosyaları text/template ve html/template paketleriyle oluşturulur. Bu paketler, şablon dosyalarının oluşturulmasını ve işlenmesini sağlayan birçok fonksiyon sağlarlar.
 
-```golang
+```go
 package main
 
 import (
@@ -38,7 +38,7 @@ func main() {
 }
 ```
 
-Bu örnekte, Person adında bir veri yapısı tanımlanmıştır. Ardından, tpl değişkeninde, şablonun bir metni yer alır. Şablon içinde kullanılacak olan değişkenler, {{.}} işaretleri arasına yazılır. Bu değişkenlere, veri yapısındaki alanlar atanacaktır.
+Bu örnekte, Person adında bir veri yapısı tanımlanmıştır. Ardından, tpl değişkeninde, şablonun bir metni yer alır. Şablon içinde kullanılacak olan değişkenler, \{{.\}} işaretleri arasına yazılır. Bu değişkenlere, veri yapısındaki alanlar atanacaktır.
 
 Daha sonra, template.Must() fonksiyonu kullanılarak yeni bir Template nesnesi oluşturulur ve şablon metni Parse() fonksiyonu ile bu nesneye atanır. Ardından, Execute() fonksiyonu kullanılarak, Template nesnesi, veri yapısı ve os.Stdout (standart çıktı) yazıcısı kullanılarak işlenir ve sonuç, ekrana yazdırılır.
 

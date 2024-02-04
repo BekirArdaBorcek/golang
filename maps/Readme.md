@@ -2,7 +2,7 @@
 
 Map, Go programlama dilinde, bir anahtar-değer çiftleri koleksiyonudur. Map veri yapısı, diğer programlama dillerindeki dictionary, hash table veya associative array gibi veri yapılarına benzer. Bir Map veri yapısı, belirli bir anahtar için bir değer saklar.
 
-```golang
+```go
 var colors map[string]string
 colors = make(map[string]string)
 colors["red"] = "#FF0000"
@@ -15,7 +15,7 @@ Bu örnekte, colors adlı bir Map tanımlanır ve make() fonksiyonu ile oluştur
 
 Map veri yapısı, diğer programlama dillerindeki veri yapılarından farklı olarak, anahtarlar için belirli bir veri tipi ve değerler için belirli bir veri tipi belirtmek zorunda değildir. Anahtarlar ve değerler farklı veri tiplerinde olabilir.
 
-```golang
+```go
 ages := map[string]int{
     "Alice": 25,
     "Bob":   30,

@@ -2,7 +2,7 @@
 
 Go dilinde struct embedding, bir struct'ın başka bir struct içinde yerleştirilmesi anlamına gelir. Böylece, iç içe geçmiş yapılar oluşturulabilir ve kod tekrarı azaltılabilir.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -36,12 +36,11 @@ func main() {
 
 Bu örnekte, Person adlı bir struct tanımlanır ve Name ve Age adlı iki özelliği vardır. Ayrıca SayHello adlı bir fonksiyonu da bulunur.
 
-Employee adlı bir struct tanımlanır ve Person adlı bir struct içinde yerleştirilir. Employee'nin kendine ait bir Company adlı bir özelliği de vardır.
-main fonksiyonunda, emp adlı bir Employee değişkeni oluşturulur. Bu değişkenin Person özelliğine bir Person türünden veri atanır. SayHello fonksiyonu, emp değişkeni üzerinden çağrılır ve sonuç ekrana yazdırılır.
+Employee adlı bir struct tanımlanır ve Person adlı bir struct içinde yerleştirilir. Employee'nin kendine ait bir Company adlı bir özelliği de vardır. main fonksiyonunda, emp adlı bir Employee değişkeni oluşturulur. Bu değişkenin Person özelliğine bir Person türünden veri atanır. SayHello fonksiyonu, emp değişkeni üzerinden çağrılır ve sonuç ekrana yazdırılır.
 
 Çıktı:
 
-```
+```go
 Hello, my name is John and I'm 30 years old
 ```
 

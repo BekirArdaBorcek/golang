@@ -6,7 +6,7 @@ WaitGroup yapısı, programcıların çalışacak işlemlerin sayısını önced
 
 Aşağıdaki örnek, WaitGroup yapısının kullanımını göstermektedir:
 
-```golang
+```go
 package main
 
 import (

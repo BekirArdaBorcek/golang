@@ -6,7 +6,7 @@ Defer ifadeleri kullanarak, bir işlevin sonunda açılan dosyaları, kapatılma
 
 Örnek olarak, bir dosya açılır ve defer ile fonksiyon sonunda dosya kapatılır:
 
-```golang
+```go
 package main
 
 import (

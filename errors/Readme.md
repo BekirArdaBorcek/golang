@@ -2,7 +2,7 @@
 
 Go dilinde hata yönetimi, error adlı bir veri tipi kullanılarak yapılır. error veri tipi, hata mesajı veya nil değeri döndüren bir fonksiyondan dönen değerleri işlemek için kullanılır.
 
-```golang
+```go
 package main
 
 import (
@@ -39,7 +39,8 @@ Bu örnekte, divide adlı bir fonksiyon tanımlanır ve iki sayıyı böler. Anc
 main fonksiyonunda, divide fonksiyonu iki farklı parametreyle çağrılır. err adlı bir hata değişkeni kullanılarak her bir çağrı sonucu kontrol edilir. Eğer hata varsa hata mesajı ekrana yazdırılır. Aksi halde, sonuç ekrana yazdırılır.
 
 Çıktı:
-```
+
+```go
 5 <nil>
 Cannot divide by zero
 ```

@@ -2,7 +2,7 @@
 
 Closures, Go programlama dilinde, bir fonksiyonun bir iç fonksiyon tarafından kullanılmasıyla oluşan bir yapıdır. Bu yapı, bir fonksiyonun içindeki başka bir fonksiyona referans vererek, bir fonksiyonun çalıştığı bağlamın dışındaki değişkenlere erişim sağlar.
 
-```golang
+```go
 func outer() func() int {
     count := 0
     return func() int {
@@ -15,11 +15,11 @@ increment := outer()
 fmt.Println(increment())
 fmt.Println(increment())
 fmt.Println(increment())
-````
+```
 
 Bu örnekte, outer adlı bir fonksiyon tanımlanır. Fonksiyon, bir iç fonksiyon döndürür ve iç fonksiyon, count adlı bir değişkene erişim sağlar. increment adlı bir değişkene outer() fonksiyonu atanır ve bu değişken ile iç fonksiyon çalıştırılır. count değişkeni, increment() çağrıldıkça artar ve her seferinde artışı ekrana yazdırılır.
 
-```golang
+```go
 func adder(a int) func(int) int {
     return func(b int) int {
         return a + b

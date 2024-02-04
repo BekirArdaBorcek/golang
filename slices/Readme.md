@@ -2,14 +2,14 @@
 
 Dilin temel veri yapılarından biri olan dilimler (slices), Go programlama dilinde, boyutu değiştirilebilen, esnek bir dizi veri yapısıdır. Dilimler, dizilerin bir alt kümesi olarak düşünülebilir ve Go dilinde sıkça kullanılır.
 
-```golang
+```go
 a := []int{1, 2, 3, 4, 5}
 fmt.Println(a)
 ```
 
 Bu örnekte, a adlı bir dilim tanımlanır ve elemanları {1, 2, 3, 4, 5} olarak atanır. Dizilerden farklı olarak, dilimlerin boyutu tanımlama aşamasında belirtilmez. Dilimler, boş da tanımlanabilir.
 
-```golang
+```go
 var a []int
 a = append(a, 1)
 a = append(a, 2, 3, 4, 5)
@@ -20,7 +20,7 @@ Bu örnekte, a adlı bir dilim tanımlanır ve append() fonksiyonu ile elemanlar
 
 Dilimler, dizilerden farklı olarak, bir alt küme olarak da tanımlanabilir.
 
-```golang
+```pascaligo
 a := []int{1, 2, 3, 4, 5}
 b := a[1:4]
 fmt.Println(b)

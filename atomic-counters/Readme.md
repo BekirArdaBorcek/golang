@@ -6,7 +6,7 @@ Bir Atomic Counter, Go'nun sync/atomic paketinde bulunan bir veri yapısıdır. 
 
 Aşağıdaki örnek, Atomic Counter kullanarak, 10 adet goroutine tarafından ortak kullanılan bir sayaç değişkeninin güvenli bir şekilde artırılmasını gösterir:
 
-```golang
+```go
 package main
 
 import (
@@ -30,6 +30,6 @@ func main() {
 }
 ```
 
-Bu örnekte, counter değişkeni, int64 türünden bir Atomic Counter olarak tanımlanır ve başlangıçta 0 değeri atanır. Daha sonra, 10 adet goroutine oluşturulur ve her biri, atomic.AddInt64 yöntemi kullanılarak counter değişkenini arttırır. Bu yöntem, &counter adresini alarak, counter değişkenine atomik bir şekilde 1 ekler.
+Bu örnekte, counter değişkeni, int64 türünden bir Atomic Counter olarak tanımlanır ve başlangıçta 0 değeri atanır. Daha sonra, 10 adet goroutine oluşturulur ve her biri, atomic.AddInt64 yöntemi kullanılarak counter değişkenini arttırır. Bu yöntem, \&counter adresini alarak, counter değişkenine atomik bir şekilde 1 ekler.
 
 Sonuç olarak, Atomic Counter veri yapısı, birden fazla goroutine tarafından paylaşılan değişkenlerin güvenli bir şekilde değiştirilmesini sağlar ve eşzamanlılık işlemlerinde kullanılan önemli bir konudur.

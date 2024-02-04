@@ -6,7 +6,7 @@ panic bir hata olduğu için genellikle kullanılmamalıdır, ancak bir hata dur
 
 panic kullanımı örneği:
 
-```golang
+```go
 package main
 
 import "fmt"

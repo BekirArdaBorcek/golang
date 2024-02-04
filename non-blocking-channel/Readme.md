@@ -2,7 +2,7 @@
 
 Go dilinde, channel'lar, blocking özelliklerine sahiptir. Yani, bir goroutine, bir channel'a mesaj göndermek ya da mesaj almak istediğinde, ilgili işlem tamamlanana kadar engellenir. Ancak, select anahtar kelimesi kullanılarak, channel'ların non-blocking işlemleri de gerçekleştirilebilir.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -57,15 +57,13 @@ func main() {
 }
 ```
 
-
 Bu örnekte, messages adlı bir channel oluşturulur ve bir mesaj gönderilmeden önce select anahtar kelimesi kullanılarak, no message received mesajı ekrana yazdırılır.
 
 Daha sonra, bir mesaj oluşturulur ve messages channel'ına gönderilir. select anahtar kelimesi kullanılarak, sent message hello mesajı ekrana yazdırılır.
 
 Ardından, select anahtar kelimesi kullanılarak, messages channel'ından bir mesaj alınır. Ancak, herhangi bir mesaj gönderilmeden önce bu işlem gerçekleştirildiği için, no message received mesajı ekrana yazdırılır.
 
-Bu örnekte, signals adlı bir channel oluşturulur ve bir sinyal gönderilmeden önce select anahtar kelimesi kullanılarak, no signal received mesajı ekrana yazdırılır.
-Daha sonra, bir sinyal oluşturulur ve signals channel'ına gönderilir. select anahtar kelimesi kullanılarak, sent signal true mesajı ekrana yazdırılır.
+Bu örnekte, signals adlı bir channel oluşturulur ve bir sinyal gönderilmeden önce select anahtar kelimesi kullanılarak, no signal received mesajı ekrana yazdırılır. Daha sonra, bir sinyal oluşturulur ve signals channel'ına gönderilir. select anahtar kelimesi kullanılarak, sent signal true mesajı ekrana yazdırılır.
 
 Son olarak, select anahtar kelimesi kullanılarak, signals channel'ından bir sinyal alınır. Ancak, herhangi bir sinyal gönderilmeden önce bu işlem gerçekleştirildiği için, no signal received mesajı ekrana yazdırılır.
 

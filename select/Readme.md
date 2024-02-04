@@ -2,7 +2,7 @@
 
 Go dilinde, select anahtar kelimesi, birden fazla channel'ı dinleyerek, hangi channel'ın mesaj gönderdiğini belirleyebilir. Bu özellik, channel'ların senkronizasyonunu kolaylaştırır ve farklı goroutines arasındaki mesajlaşmayı yönetir.
 
-```golang
+```go
 package main
 
 import (
@@ -40,6 +40,7 @@ Bu örnekte, c1 ve c2 adlı iki channel oluşturulur ve mesaj gönderme işlemi 
 main fonksiyonunda, select anahtar kelimesi kullanılarak, c1 ve c2 channel'ları dinlenir. İlk olarak, goroutine'lar arasındaki bekleme süresi nedeniyle, c1 channel'ından bir mesaj alınır ve ekrana yazdırılır. Daha sonra, c2 channel'ından bir mesaj alınır ve ekrana yazdırılır.
 
 Çıktı:
+
 ```
 received one
 received two

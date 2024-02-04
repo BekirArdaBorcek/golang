@@ -2,7 +2,7 @@
 
 Go dilinde, range anahtar kelimesi, channel'lar üzerinde döngü işlemlerinin gerçekleştirilmesini sağlar. Bu yöntemle, channel'ın kapatılması beklenmeden, tüm mesajlar for döngüsü kullanılarak alınabilir.
 
-```golang
+```go
 package main
 
 import "fmt"

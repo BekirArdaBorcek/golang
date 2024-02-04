@@ -2,7 +2,7 @@
 
 Go dilinde, timeout işlemleri, özellikle ağ işlemleri sırasında önemlidir. time paketi kullanılarak, belirli bir süre beklenmesi sağlanabilir. Eğer süre aşılırsa, timeout hatası oluşur.
 
-```golang
+```go
 package main
 
 import (
@@ -48,6 +48,7 @@ Bu örnekte, c1 ve c2 adlı iki channel oluşturulur ve mesaj gönderme işlemle
 Daha sonra, select anahtar kelimesi kullanılarak, c2 channel'ından bir mesaj beklenir. Ancak, time.After kullanılarak, c2 channel'ından bir mesaj alınmadan önce, üç saniye beklenir.
 
 Çıktı:
+
 ```
 timeout 1
 result 2

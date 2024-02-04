@@ -2,7 +2,7 @@
 
 Go dilinde, timerlar, bir işlemin belirli bir süre sonra gerçekleştirilmesini sağlamak için kullanılır. time paketi içerisinde yer alan NewTimer fonksiyonu kullanılarak, bir timer oluşturulabilir.
 
-```golang
+```go
 package main
 
 import (

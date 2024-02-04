@@ -1,8 +1,8 @@
-# if/else
+# If/Else
 
 if ve else ifadeleri, Go programlama dilinde, belirli koşulların doğru veya yanlış olması durumunda farklı kod bloklarının çalışmasını sağlar.
 
-```golang
+```go
 if x > 0 {
     fmt.Println("Positive number")
 } else if x < 0 {
@@ -14,7 +14,7 @@ if x > 0 {
 
 Bu örnekte, if ifadesi, x değişkeninin 0 dan büyük olması durumunda "Positive number" metnini yazdıracaktır. Eğer x değişkeni 0 dan büyük değilse, else if ifadesi kontrol edilecek ve x değişkeninin 0 dan küçük olması durumunda "Negative number" metnini yazdıracaktır. Eğer x değişkeni 0 dan büyük veya küçük değilse, else bloğu çalışacak ve "Zero" metnini yazdıracaktır.
 
-```golang
+```go
 if ve else ifadeleri, karmaşık koşulları kontrol etmek için de kullanılabilir.
 if x > 10 && x < 20 {
     fmt.Println("x is between 10 and 20")

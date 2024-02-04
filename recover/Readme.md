@@ -6,7 +6,7 @@ recover fonksiyonu genellikle defer ifadeleri ile birlikte kullanılır. Bu saye
 
 Örnek olarak, bir panic oluştuğunda programın çalışmasını durdurmak yerine, recover fonksiyonu sayesinde programın normal bir şekilde devam etmesi sağlanabilir:
 
-```golang
+```go
 package main
 
 import "fmt"

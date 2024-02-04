@@ -4,19 +4,19 @@ Golang, string verileri üzerinde işlemler yapmak için birçok hazır fonksiyo
 
 Bazı yaygın kullanılan string fonksiyonları şunlardır:
 
-- len(s string) int: Verilen string'in uzunluğunu döndürür.
-- s[i] byte: Verilen string'deki belirtilen indeks numarasındaki karakteri döndürür.
-- s + t: İki string'i birleştirir.
-- strings.Split(s, sep string) []string: Verilen string'i, belirtilen ayırıcı karakterlere göre parçalar ve bir diziye dönüştürür.
-- strings.Join(a []string, sep string) string: Verilen string dizisini, belirtilen ayırıcı karakterle birleştirir ve tek bir string olarak döndürür.
-- strings.Contains(s, substr string) bool: Verilen string içinde, belirtilen alt string'in olup olmadığını kontrol eder.
-- strings.HasPrefix(s, prefix string) bool: Verilen string'in, belirtilen ön ek ile başlayıp başlamadığını kontrol eder.
-- strings.HasSuffix(s, suffix string) bool: Verilen string'in, belirtilen son ek ile bitip bitmediğini kontrol eder.
-- strings.Replace(s, old, new string, n int) string: Verilen string'de, belirtilen eski string'i, belirtilen yeni string ile değiştirir. İsteğe bağlı olarak, belirtilen sayıda değiştirme yapar.
+* len(s string) int: Verilen string'in uzunluğunu döndürür.
+* s\[i] byte: Verilen string'deki belirtilen indeks numarasındaki karakteri döndürür.
+* s + t: İki string'i birleştirir.
+* strings.Split(s, sep string) \[]string: Verilen string'i, belirtilen ayırıcı karakterlere göre parçalar ve bir diziye dönüştürür.
+* strings.Join(a \[]string, sep string) string: Verilen string dizisini, belirtilen ayırıcı karakterle birleştirir ve tek bir string olarak döndürür.
+* strings.Contains(s, substr string) bool: Verilen string içinde, belirtilen alt string'in olup olmadığını kontrol eder.
+* strings.HasPrefix(s, prefix string) bool: Verilen string'in, belirtilen ön ek ile başlayıp başlamadığını kontrol eder.
+* strings.HasSuffix(s, suffix string) bool: Verilen string'in, belirtilen son ek ile bitip bitmediğini kontrol eder.
+* strings.Replace(s, old, new string, n int) string: Verilen string'de, belirtilen eski string'i, belirtilen yeni string ile değiştirir. İsteğe bağlı olarak, belirtilen sayıda değiştirme yapar.
 
 Örnek olarak, bir string içinde belirli bir karakter dizisinin kaç kez geçtiğini bulmak için strings.Count fonksiyonu kullanılabilir:
 
-```golang
+```go
 package main
 
 import (

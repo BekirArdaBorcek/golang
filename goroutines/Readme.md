@@ -2,7 +2,7 @@
 
 Goroutines, Go dilinde eşzamanlı olarak çalışan işlemlerdir. Goroutines, go anahtar kelimesi kullanılarak oluşturulur ve farklı işlemleri eşzamanlı olarak gerçekleştirmek için kullanılır.
 
-```golang
+```go
 package main
 
 import (
@@ -26,7 +26,8 @@ Bu örnekte, sayHello adlı bir fonksiyon tanımlanır ve Hello adlı bir mesaj�
 main fonksiyonunda, sayHello fonksiyonu bir goroutine olarak çağrılır. Bu nedenle, sayHello fonksiyonunun çalışması diğer işlemlerden bağımsız olarak gerçekleşir. time.Sleep fonksiyonu, bir saniyelik bir bekleme süresi ekler. Son olarak, World adlı bir mesaj ekrana yazdırılır.
 
 Çıktı:
-```
+
+```go
 Hello
 World
 ```

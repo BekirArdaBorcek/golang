@@ -20,7 +20,7 @@ Go dilinde, JSON verileri için struct yapısı kullanılabilir. struct yapısı
 
 Örneğin, bir Person struct'ı tanımlayalım ve bu struct'ı JSON verisiyle eşleştirelim:
 
-```golang
+```go
 type Person struct {
     Name string `json:"name"`
     Age  int    `json:"age"`
@@ -32,7 +32,7 @@ Burada, Person struct'ının alanları, JSON verisindeki anahtarlarla eşleştir
 
 Bu struct'ı JSON verisine dönüştürmek için, json.Marshal() fonksiyonu kullanılabilir:
 
-```golang
+```go
 person := Person{Name: "John Doe", Age: 30, City: "New York"}
 jsonData, err := json.Marshal(person)
 if err != nil {
@@ -45,7 +45,7 @@ Burada, Person struct'ı bir person değişkeni olarak tanımlanır ve json.Mars
 
 Bir başka örnek de, JSON verilerini Go veri yapılarına dönüştürmek ve tersi işlemi yapmak için json.Marshal() ve json.Unmarshal() fonksiyonlarını kullanmaktır. Örneğin:
 
-```golang
+```go
 package main
 
 import (
@@ -80,7 +80,7 @@ func main() {
 
 Bu örnekte, Person adlı bir yapı tanımlanır ve json.Marshal() ve json.Unmarshal() fonksiyonları kullanılarak bu yapı JSON verisi olarak kodlanır ve çözümlenir.
 
-```
+```go
 {"Name":"Alice","Age":30}
 {Bob 40}
 ```

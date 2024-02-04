@@ -2,7 +2,7 @@
 
 Go dilinde channel, goroutines arasında veri iletişimi yapmak için kullanılan bir veri yapısıdır. Channel, make anahtar kelimesi kullanılarak oluşturulur ve <- operatörü kullanılarak veri gönderme ve alma işlemleri yapılır.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -24,7 +24,8 @@ go anahtar kelimesi kullanılarak, bir goroutine oluşturulur ve bu goroutine, m
 main fonksiyonunda, msg adlı bir değişkene messages channel'ından bir mesaj alınır ve ekrana yazdırılır.
 
 Çıktı:
-```
+
+```go
 Hello
 ```
 
@@ -48,10 +49,10 @@ Golang, paralel işlem yapmak için goroutine'leri kullanır. Goroutine'ler, haf
 
 Golang'daki paralel işlem yapma yeteneği, özellikle büyük ölçekli, hesaplama yoğunluğu yüksek ve çoklu kullanıcı desteği gerektiren uygulamalarda oldukça faydalıdır.
 
-- **Veri işleme:** Bir uygulama, büyük veri kümelerini işlemek için paralel işlem yapabilir. Örneğin, bir uygulama bir veritabanındaki milyonlarca kaydı okuyabilir ve bu kayıtlardan farklı bir algoritma ile analizler yapabilir.
-- **Hesaplama yoğunluğu yüksek işlemler:** Bir uygulama, yüksek hesaplama yoğunluğu gerektiren işlemleri paralel işlem yaparak daha hızlı bir şekilde tamamlayabilir. Örneğin, bir uygulama karmaşık matematiksel hesaplamalar yapabilir veya büyük dosyaların şifrelemesini yapabilir.
-- **Çoklu kullanıcı desteği:** Bir uygulama, aynı anda birden fazla kullanıcının erişimine izin vermek için paralel işlem yapabilir. Örneğin, bir web uygulaması birden fazla kullanıcının aynı anda istek göndermesini sağlayabilir ve bu istekleri paralel olarak işleyebilir. 
-- **Çoklu işlemci çekirdeği:** Birden fazla işlemci çekirdeğine sahip sistemlerde, paralel işlem yaparak uygulamanızın daha verimli bir şekilde çalışmasını sağlayabilirsiniz. Örneğin, bir uygulama, birden fazla işlemci çekirdeğini kullanarak daha hızlı veri işleme ve hesaplama yapabilir.
+* **Veri işleme:** Bir uygulama, büyük veri kümelerini işlemek için paralel işlem yapabilir. Örneğin, bir uygulama bir veritabanındaki milyonlarca kaydı okuyabilir ve bu kayıtlardan farklı bir algoritma ile analizler yapabilir.
+* **Hesaplama yoğunluğu yüksek işlemler:** Bir uygulama, yüksek hesaplama yoğunluğu gerektiren işlemleri paralel işlem yaparak daha hızlı bir şekilde tamamlayabilir. Örneğin, bir uygulama karmaşık matematiksel hesaplamalar yapabilir veya büyük dosyaların şifrelemesini yapabilir.
+* **Çoklu kullanıcı desteği:** Bir uygulama, aynı anda birden fazla kullanıcının erişimine izin vermek için paralel işlem yapabilir. Örneğin, bir web uygulaması birden fazla kullanıcının aynı anda istek göndermesini sağlayabilir ve bu istekleri paralel olarak işleyebilir.
+* **Çoklu işlemci çekirdeği:** Birden fazla işlemci çekirdeğine sahip sistemlerde, paralel işlem yaparak uygulamanızın daha verimli bir şekilde çalışmasını sağlayabilirsiniz. Örneğin, bir uygulama, birden fazla işlemci çekirdeğini kullanarak daha hızlı veri işleme ve hesaplama yapabilir.
 
 Bu örnekler, paralel işlemlerin ne gibi durumlarda kullanılabileceğine dair bir fikir vermektedir. Golang'daki goroutine'ler sayesinde, bu tür işlemleri daha hızlı ve verimli bir şekilde gerçekleştirebilirsiniz.
 
@@ -59,7 +60,7 @@ Bu örnekler, paralel işlemlerin ne gibi durumlarda kullanılabileceğine dair 
 
 Go dilinde channel'ların boyutu, belirli bir kapasiteyle sınırlandırılabilir. Bu, channel'ların belirli sayıda veri almasını sağlar. Bu özellik, channel buffering olarak adlandırılır.
 
-```golang
+```go
 package main
 
 import "fmt"
@@ -94,7 +95,7 @@ Bu örnekte, channel buffering kullanarak, messages channel'ı boyutu 2 olarak t
 
 Go dilinde, channel'lar ayrıca, farklı goroutines arasında senkronizasyon için de kullanılabilir. Bu, bir goroutine'un, diğer bir goroutine'un işlemi tamamlamasını beklemesi gerektiği durumlarda kullanışlıdır.
 
-```golang
+```go
 package main
 
 import (
@@ -125,6 +126,7 @@ worker fonksiyonu, working... mesajını ekrana yazdırır, bir saniyelik bir be
 main fonksiyonunda, done adlı bir channel oluşturulur ve boyutu 1 olarak belirlenir. go anahtar kelimesi kullanılarak, worker fonksiyonu bir goroutine olarak çağrılır. <-done kullanılarak, worker fonksiyonu tamamlandığında main fonksiyonuna bir mesaj gönderilir ve ana iş parçacığı bu mesajı alır.
 
 Çıktı:
+
 ```
 working...done
 ```
@@ -135,7 +137,7 @@ Bu örnekte, channel senkronizasyonu kullanarak, worker fonksiyonu bir goroutine
 
 Go dilinde, channel'ların yönü, gönderme (send) veya alma (receive) işlemleri için belirlenebilir. Bu nedenle, channel'ların kullanımı, farklı goroutines arasındaki iletişimi ve veri aktarımını kolaylaştırır.
 
-```golang
+```go
 package main
 
 import "fmt"

@@ -2,7 +2,7 @@
 
 Go dilinde, worker poollar, belirli bir işlemi yapmak üzere ayrılmış bir işçi grubudur. İşler bir channel'a gönderilir ve bu işçiler tarafından işlenir. Bu sayede, işlemler belirli bir sıra ile işçilere dağıtılarak, iş yükü paylaştırılmış olur.
 
-```golang
+```go
 package main
 
 import (

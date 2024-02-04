@@ -1,8 +1,8 @@
-## For
+# For
 
 for döngüsü, Go programlama dilinde, belirli bir koşul doğru olduğu sürece tekrarlanan kod bloklarını ifade etmek için kullanılır. for döngüsü, bir başlangıç durumu, bir koşul ve bir adım sayısı içerir.
 
-```golang
+```go
 for i := 0; i < 5; i++ {
     fmt.Println(i)
 }
@@ -12,7 +12,7 @@ Bu örnekte, for döngüsü, i değişkeninin 0 değerinden başlayarak, i deği
 
 for döngüsü, koşul kısmı sağlanana kadar tekrarlanır. Koşul kısmı doğru olmadığında, döngü sona erer. Ayrıca, for döngüsü break veya continue ifadeleri ile de kontrol edilebilir.
 
-```golang
+```go
 for i := 0; i < 10; i++ {
     if i == 3 {
         break

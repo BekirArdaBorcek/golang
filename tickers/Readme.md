@@ -2,7 +2,7 @@
 
 Go dilinde, tickerlar, belirli bir süre boyunca belirli aralıklarla bir işlemin gerçekleştirilmesini sağlamak için kullanılır. time paketi içerisinde yer alan NewTicker fonksiyonu kullanılarak, bir ticker oluşturulabilir.
 
-```golang
+```go
 package main
 
 import (

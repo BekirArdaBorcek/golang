@@ -10,7 +10,7 @@ Ayrıca, sort.Slice() fonksiyonu ile özel sıralama işlemleri de gerçekleşti
 
 Örneğin, aşağıdaki örnekte sort.Slice() fonksiyonu kullanılarak özel bir sıralama işlemi gerçekleştirilir:
 
-```golang
+```go
 package main
 
 import (
@@ -50,7 +50,7 @@ Bu örnekte, Person tipinde bir slice tanımlanır ve sort.Slice() fonksiyonu ku
 
 İlk örnekte, sort.Ints() fonksiyonu kullanılarak ints adlı bir slice küçükten büyüğe doğru sıralanır ve sonuç ekrana yazdırılır:
 
-```golang
+```go
 package main
 
 import (
@@ -80,7 +80,7 @@ Slice is sorted.
 
 İkinci örnekte ise sort.Strings() fonksiyonu kullanılarak strings adlı bir slice alfabetik olarak sıralanır ve sonuç ekrana yazdırılır:
 
-```golang
+```go
 package main
 
 import (
