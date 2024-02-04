@@ -7,6 +7,9 @@ Değişkenlerin tanımlanması, var anahtar kelimesi ile yapılır. Tanımlanaca
 ```go
 var name string
 name = "John Doe"
+
+
+arda := 5 
 ```
 
 Bu örnekte, name adında bir değişken tanımlanır ve bu değişkenin tipi string olarak belirlenir. Daha sonra, name değişkenine "John Doe" stringi atanır. Değişkenlerin değeri değiştirilebilir ve farklı veri tiplerinde olabilirler.
