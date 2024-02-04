@@ -31,6 +31,7 @@ Sonuç olarak, Go dilinin temel özellikleri arasında hızlı derleme süreci, 
 
 ## İçerik:
 
+* [File and Code](file-and-code.md)
 * [Values](./#values)
 * [Variables](./#variables)
 * [Constants](./#constants)
@@ -76,6 +77,22 @@ Sonuç olarak, Go dilinin temel özellikleri arasında hızlı derleme süreci, 
 ***
 
 \
+
+
+## File and Code
+
+Go dili, paket sistemiyle çalışır. Dosyalar, paket olarak sayılır ve paket isimleriyle işlem yapılır. Kodlarımızı, fonksiyonlar içerisinde yazıp ana fonksiyonumuzun adı main() olmak zorundadır. FMT paketi, içerisinde temel fonksiyonların olduğu pakettir.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, 世界")
+}
+```
+
 
 
 ## Values
