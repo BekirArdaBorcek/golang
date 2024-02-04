@@ -2,7 +2,7 @@
 
 Değişkenler (variables), Go programlama dilinde veri saklamak için kullanılan temel yapı taşlarından biridir. Bir değişkene bir değer atayarak, o değişkenin tuttuğu değeri programda kullanabiliriz.
 
-Değişkenlerin tanımlanması, var anahtar kelimesi ile yapılır. Tanımlanacak değişkenin adı ve veri tipi belirtilir. İlk değer verilmediğinde, Go dilinde değişkenlerin varsayılan bir değeri vardır.
+Değişkenlerin tanımlanması, var anahtar kelimesi ile yapılır. Tanımlanacak değişkenin adı ve veri tipi belirtilir. İlk değer verilmediğinde, Go dilinde değişkenlerin varsayılan bir değeri vardır. Eğer istersek := işaretleriyle de herhangi bir keyword kullanmadan da değişken tanımlayabiliriz.
 
 ```go
 var name string
